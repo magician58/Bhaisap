@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Love Story</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- First Page Content -->
+  <div id="firstPage">
+    <p>Hello, I have fallen for you. Kya hai? Aja tyo tmelai herdha. Tmele hereko thiyau ne tyo kahele pane birsidhina hola.</p>
+    <p>Do you want to continue?</p>
+    <button onclick="showNextPage(true)">Yes</button>
+    <button onclick="showNextPage(false)">No</button>
+  </div>
+
+  <!-- Thank You Message after First Choice -->
+  <div id="thankYouMessage" class="hidden">
+    <p>Thank you!</p>
+    <button onclick="showSecondPage()">Next</button>
+  </div>
+
+  <!-- Second Page Content -->
+  <div id="secondPage" class="hidden">
+    <p>Hai, malai kasto maya lagxa tmero like hai. I really want to propose you, tara dar lagxa kya.</p>
+    <p>Can I propose you?</p>
+    <button onclick="propose(true)">Yes1</button>
+    <button onclick="propose(false)">No1</button>
+  </div>
+
+  <!-- Heartbreak or Thank You -->
+  <div id="result" class="hidden">
+    <p id="heartBreak" class="heart-break hidden">💔😭</p>
+    <p id="thankYou" class="thank-you hidden">Thank you so much!</p>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
